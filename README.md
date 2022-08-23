@@ -1,3 +1,56 @@
+# Great Udacity Bookshelf
+
+Great Udacity bookshelf is a project in course 2: API Development and Documentation of the Udacity Full Stack Web Developer Nanodegree.
+It is a virtual bookshelf of Udacity, where one can Create a new book, Read all the books avaliable (paginated), Update book ratings and Delete books.
+As a student of the Nanodegree, building this project helped solidify all the knlowedge I gained on API development and documentation.
+
+All backend code follows [PEP8 style guidelines](https://www.python.org/dev/peps/pep-0008/). 
+
+## Getting Started
+
+### Pre-requisites and Local Development 
+Developers using this project should already have Python3, pip and node installed on their local machines.
+
+#### Backend
+
+From the backend folder run `pip install requirements.txt`. All required packages are included in the requirements file. 
+
+To run the application run the following commands: 
+```
+export FLASK_APP=flaskr
+export FLASK_ENV=development
+flask run
+```
+
+These commands put the application in development and directs our application to use the `__init__.py` file in our flaskr folder. Working in development mode shows an interactive debugger in the console and restarts the server whenever changes are made. If running locally on Windows, look for the commands in the [Flask documentation](http://flask.pocoo.org/docs/1.0/tutorial/factory/).
+
+The application is run on `http://127.0.0.1:5000/` by default and is a proxy in the frontend configuration. 
+
+#### Frontend
+
+From the frontend folder, run the following commands to start the client: 
+```
+npm install // only once to install dependencies
+npm start 
+```
+
+By default, the frontend will run on localhost:3000. 
+
+### Tests
+In order to run tests navigate to the backend folder and run the following commands: 
+
+```
+dropdb bookshelf_test
+createdb bookshelf_test
+psql bookshelf_test < books.psql
+python test_flaskr.py
+```
+
+The first time you run the tests, omit the dropdb command. 
+
+All tests are kept in that file and should be maintained as updates are made to app functionality. 
+
+
 ## API DOCS
 
 ### Getting Started
@@ -235,3 +288,11 @@ Potential error types that could be encountered on failed request
 }
 
 ```
+
+## Deployment N/A
+
+## Authors
+My dear instructor, [Coach Caryn McCarthy](https://www.linkedin.com/in/carynmccarthy) and [my humble self](https://github.com/omobolajisonde) 
+
+## Acknowledgements 
+The awesome team at Udacity and Coach Caryn McCarthy!
